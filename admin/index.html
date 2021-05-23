@@ -1,0 +1,219 @@
+<?php 
+session_start(); 
+$Iniciada = isset($_SESSION["autentificado"]) ? $_SESSION["autentificado"] : null;
+$CEDULA = isset($_SESSION["cedula"]) ? $_SESSION["cedula"] : null;
+if ($Iniciada != "SI") { 
+    echo "<script> var mostrar = 'si'; </script>";
+}
+?>
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Usuario</title>
+		<?php include('../inc/head.php') ?>
+		<meta name="description" content="Página pribada, solo para Voceros autorizados">
+		<meta property="og:title" content="Usuario" />
+        <meta property="og:description" content="Página pribada, solo para Voceros autorizados" />
+		<link rel="stylesheet" href="/css/usuario_all.css">
+		<link rel="stylesheet" href="/css/login.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<?php $error = isset($_GET["error"]) ? $_GET["error"] : null; ?>
+		<script> var error = '<?php echo $error; ?>'; </script>
+		<script src="/js/login.js"></script>
+	</head>
+	<body>
+        <?php include('../inc/header.php') ?>
+        <div class="cabecera"></div>
+        <div class="principal">
+            <main>
+				<article class="blog">
+                    <h3>Consultar Censo Demográfico</h3>
+					<div class="contenido">
+						<div class="imagen">
+							<img src="/img/usuario/censo.jpg" alt="censo">
+						</div><br>
+						<form class="formulario" method="post" action="censo/consultar.php">
+						    <input class="texto" type="text" autocomplete="on" placeholder="Ingrese la Cédula ó Id" name="cedula" required>
+						    <input class="boton" type="submit" value="Buscar">
+				        </form>
+					</div>
+                </article>
+                <article class="blog">
+                    <h3><a href="censo">Nuevo Censo Demográfico</a></h3>
+					<div class="contenido">
+						<div class="imagen">
+							<a href="censo"><img src="/img/usuario/censo.jpg" alt="censo"></a>
+						</div>
+					</div>
+                </article>
+                <article class="blog">
+                    <h3>Editar Censo Demográfico</h3>
+					<div class="contenido">
+						<div class="imagen">
+							<img src="/img/usuario/censo.jpg" alt="censo">
+						</div><br>
+						<form class="formulario" method="post" action="censo/editar.php">
+						    <input class="texto" type="text" autocomplete="on" placeholder="Ingrese la Cédula ó Id" name="cedula" required>
+						    <input class="boton" type="submit" value="Buscar">
+				        </form>
+					</div>
+                </article>
+				<article class="blog">
+                    <h3>Generar Listados para CLAP</h3>
+					<div class="contenido">
+						<div class="imagen">
+							<img src="/img/usuario/clap.jpg" alt="censo">
+						</div><br>
+						<form class="formulario" method="post" action="censo/listas_clap.php">
+						    <select name="direccion" class="texto" required>
+						        <option value="">Seleccione la Calle</option>
+                                <option value="T1">1ra Transversal</option>
+                                <option value="T2">2da Transversal</option>
+                                <option value="C2">2da Calle</option>
+                                <option value="Cj">Calle Jabillo</option>
+                                <option value="Cc">Callejón Coromoto</option>
+						    </select>
+						    <input class="boton" type="submit" value="Generar">
+				        </form>
+					</div>
+                </article>
+				<article class="blog">
+                    <h3><a href="censo/mudados.php">Mudados.</a></h3>
+					<div class="contenido">
+						<div class="imagen">
+							<a href="censo/mudados.php"><img src="/img/usuario/censo.jpg" alt="censo"></a>
+						</div>
+					</div>
+                </article>
+				<article class="blog">
+                    <h3><a href="censo/nopagaron.php">NO Compran.</a></h3>
+					<div class="contenido">
+						<div class="imagen">
+							<a href="censo/nopagaron.php"><img src="/img/usuario/censo.jpg" alt="censo"></a>
+						</div>
+					</div>
+                </article>				
+				<article class="blog">
+                    <h3><a href="censo/consolidado.php">Censo Consolidado.</a></h3>
+					<div class="contenido">
+						<div class="imagen">
+							<a href="censo/consolidado.php"><img src="/img/usuario/censo.jpg" alt="censo"></a>
+						</div>
+					</div>
+                </article>				
+				<article class="blog">
+                    <h3>Datos Faltentes del Censo Demografico</h3>
+					<div class="contenido">
+						<div class="imagen">
+							<img src="/img/usuario/censo.jpg" alt="censo">
+						</div><br>
+						<form class="formulario" method="post" action="censo/sindatos.php">
+						    <select name="direccion" class="texto" required>
+						        <option value="">Seleccione la Calle</option>
+                                <option value="T1">1ra Transversal</option>
+                                <option value="T2">2da Transversal</option>
+                                <option value="C2">2da Calle</option>
+                                <option value="Cj">Calle Jabillo</option>
+                                <option value="Cc">Callejón Coromoto</option>
+						    </select>
+						    <input class="boton" type="submit" value="Generar">
+				        </form>
+					</div>
+                </article>				
+				<article class="blog">
+                    <h3><a href="censo/carnet.php">Carnet Familiares.</a></h3>
+					<div class="contenido">
+						<div class="imagen">
+							<a href="censo/carnet.php"><img src="/img/usuario/carnet.png" alt="censo"></a>
+						</div>
+					</div>
+                </article>
+				<article class="blog">
+                    <h3>Generar Listados de Electores</h3>
+					<div class="contenido">
+						<div class="imagen">
+							<img src="/img/usuario/cuaderno_votacion.png" alt="censo">
+						</div><br>
+						<form class="formulario" method="post" action="censo/listas_electores.php">
+							<select name="formato" class="texto" required>
+						        <option value="pdf">Formato PDF</option>
+                                <option value="xlsx">Formato Excel</option>
+						    </select>
+						    <select name="direccion" class="texto" required>
+						        <option value="">Seleccione la Calle</option>
+                                <option value="T1">1ra Transversal</option>
+                                <option value="T2">2da Transversal</option>
+                                <option value="C2">2da Calle</option>
+                                <option value="Cj">Calle Jabillo</option>
+                                <option value="Cc">Callejón Coromoto</option>
+						    </select>
+						    <input class="boton" type="submit" value="Generar">
+				        </form>
+					</div>
+                </article>
+                <article class="blog">
+                    <h3><a href="censo/cuaderno_votacion.php">Generar Cuaderno de Votación</a></h3>
+					<div class="contenido">
+						<div class="imagen">
+							<a href="censo/cuaderno_votacion.php">
+							    <img src="/img/usuario/cuaderno_votacion.png" alt="censo">
+				            </a>
+						</div>
+					</div>
+                </article>
+				<article class="blog">
+                    <h3><a href="censo/contactos.php">Lista de Contactos.</a></h3>
+					<div class="contenido">
+						<div class="imagen">
+							<a href="censo/contactos.php"><img src="/img/usuario/contactos.png" alt="censo"></a>
+						</div>
+					</div>
+                </article>
+				<article class="blog">
+                    <h3><a href="censo/app_clap.php">App CLAP</a></h3>
+					<div class="contenido">
+						<div class="imagen">
+							<a href="censo/app_clap.php"><img src="/img/usuario/escanear.png" alt="articulo"></a>
+						</div>
+					</div>
+                </article>
+				<article class="blog">
+                    <h3><a href="/articulo/ingresar.php">Nuevo Articulo</a></h3>
+					<div class="contenido">
+						<div class="imagen">
+							<a href="/articulo/ingresar.php"><img src="/img/articulos/articulo.jpg" alt="articulo"></a>
+						</div>
+					</div>
+                </article>
+                <article class="blog">
+                    <h3><a href="config">Datos de Usuario</a></h3>
+					<div class="contenido">
+					    <?php   
+                            if(file_exists("../img/usuario/".$CEDULA)) {
+                                $Imagen = '<img src="/img/usuario/'.$CEDULA.'" alt="Usuario">';
+                            }else{
+                                $Imagen = '<img src="/img/usuario/usuario.png" alt="Usuario">';
+                            }                            
+                        ?>
+						<div class="imagenU">
+							<a href="config"><?php echo $Imagen; ?></a>
+						</div>
+					</div>
+                </article>
+            </main>
+            <?php include('../inc/aside.php') ?>
+        </div>
+        <?php include('../inc/footer.php') ?>
+		<div class="modal">
+            <div class="datos">
+                <form method="post" action="/seg/login.php">
+                    <h3>Datos de Acceso</h3>
+                    <input class="texto" type="text" placeholder=" Ingresa tu Usuario" name="usuario" required>
+                    <input class="texto" type="password" placeholder="&#128273; Ingresa tu Clave" name="clave" required>
+                    <input class="boton" type="submit" value="Acceder">
+                    <h3 class="error">Error de Acceso</h3>
+                </form>
+            </div>
+        </div>
+	</body>
+</html>

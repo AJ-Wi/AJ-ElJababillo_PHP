@@ -1,0 +1,53 @@
+#cuaderno {
+    width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seccion, .titulo {
+    height: 50px;
+    border: 1px solid rgba(0,0,0,0.7);
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.id {
+    padding: 0;
+    width: 30px;
+}
+
+.nombre {
+    width: 200px;
+    justify-content: flex-start;
+}
+
+.nombre label, .nombre h3 {
+    margin-left: 10px;
+}
+
+.cedula {
+    width: 70px;
+}
+
+.edad {
+    width: 50px;
+}
+
+.direccion {
+    width: 150px;
+}
+
+.firma {
+    width: 150px;
+}
+
+.voto {
+    width: 50px;
+}
+
+.huella {
+    width: 150px;
+}

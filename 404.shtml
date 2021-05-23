@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Consejo Comunal el Jabillo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
+		<meta name="description" content="Articulos sobres eventos y actos del consejo comunal el jabillo">
+		<meta name="author" content="Grupo CVCELL">
+		<meta property="og:title" content="Poligonal del Consejo Comunal el Jabillo" />
+        <meta property="og:description" content="Articulos sobres eventos y actos del consejo comunal el jabillo" />
+    	<link rel="shortcut icon" href="/img/icon/jabillo.ico">
+		<link rel="stylesheet" href="/css/estilos.css">
+		<link rel="stylesheet" href="/css/error.css">
+	</head>
+	<body>
+        <header>
+            <div class="contenedor">
+                <a href="" id="icono"><img src="/img/icon/jabillo.ico" alt=""></a>
+                <a href="" id="logo"><img src="/img/logo.png" alt=""></a>
+                <h1>El Jabillo</h1>
+                <input type="checkbox" id="btn-menu">
+                <label class="icon-menu" for="btn-menu"></label>
+                <nav class="menu">
+                    <a href="/" id="uno">Inicio</a>
+                    <a href="/solicitudes" id="dos">Solicitudes</a>
+                    <a href="/voceros" id="tres">Voceros</a>
+                    <a href="/clap" id="cuatro">CLAP</a>
+                    <a href="/contacto" id="cinco">Contactenos</a>
+                </nav>
+            </div>
+        </header>
+        <div class="principal">
+			<main>
+				<div class="error">
+					<img src="/img/error.png" alt="Error 404">
+					<h2>OOPS! Página no encontrada</h2>
+				</div>
+			</main>
+			<aside>
+				<div class="ficha">
+					<a href="/info/tarjeta_socialista"><img src="/img/info/tarjetasocialista.jpg" alt=""></a>
+				</div>
+				<div class="ficha">
+                    <a href="/info/poligonal"><img src="/img/info/poligonal.jpg" alt=""></a>
+                </div>
+                <div class="ficha">
+                    <a href="/info/jabillo"><img src="/img/info/jabillo.jpg" alt=""></a>
+                </div>
+				<div class="ficha">
+					<a href="http://www.mpcomunas.gob.ve" target="_blank"><img src="/img/info/comunas.jpg" alt=""></a>
+				</div>
+				<div class="ficha">
+					<a href="http://www.fundacomunal.gob.ve" target="_blank"><img src="/img/info/fundacomunal.png" alt=""></a>
+				</div>
+			</aside>
+        </div>
+        <footer>
+            <hr>
+            <div class="contenedor">
+                <p class="copy">Consejo Comunal el Jabillo &copy; 2016<br>Página Web diseñada por <a href="http://cvcell.comoj.com">Grupo CVCELL</a></p>
+                <div class="sociales">
+                    <a class="icon-facebook" href="https://www.facebook.com/ConsejoElJabillo/" target="_blank"></a>
+                    <a class="icon-twitter" href="https://twitter.com/JabilloComunal" target="_blank"></a>
+                    <a class="icon-gplus" href="https://plus.google.com/114147558625070351828" target="_blank"></a>
+                </div>
+            </div>
+        </footer>
+	</body>

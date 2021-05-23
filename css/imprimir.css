@@ -1,0 +1,24 @@
+.saltopagina{ 
+    display:none; 
+}
+
+@media print{
+	
+	.principal {
+		margin: 0;
+	}
+	
+	.censo {
+		margin: 0 0 0 30px;
+	}
+	
+   .saltopagina{ 
+      display:block; 
+	  height: 40px;
+   }
+   
+   header, footer {
+	   display: none;
+   }
+   
+}

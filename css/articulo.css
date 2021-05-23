@@ -1,0 +1,108 @@
+.articulo {
+    width: 99%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.articulo:hover {
+    box-shadow: 0 0 0 0, 0 1px 10px;
+}
+
+.articulo h2 {
+    width: 90%;
+    margin: auto;
+    color: red;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.articulo h4 {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.articulo .imagen, .articulo .imagenS {
+    width: 90%;
+    margin: auto;
+}
+
+.imagenV {
+	width: 50%;
+    margin: auto;
+}
+
+.imagen img, .imagenS img, .imagenV img {
+    width: 100%;
+}
+
+.articulo p {
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.articulo ul {
+    width: 75%;
+    margin-bottom: 10px;
+    list-style-type: decimal;
+}
+
+.articulo span {
+    font-family: cursive;
+}
+
+.articulo .tabla {
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.tabla .ficha_tabla {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.tabla img {
+    width: 30%;
+}
+
+.tabla p {
+    text-align: center;
+}
+
+.articulo .mensaje {
+    width: 90%;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (min-width:480px) {
+    
+    .articulo .tabla {
+        justify-content: space-between;
+    }
+    
+    .tabla .ficha_tabla {
+        width: 48%;
+    }
+    
+    .articulo .imagenS {
+        width: 50%;
+    }
+	
+    .articulo .imagenV {
+        width: 25%;
+    }
+    
+}

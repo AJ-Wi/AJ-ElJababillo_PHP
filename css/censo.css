@@ -1,0 +1,121 @@
+.censo {
+    width: 98%;    
+    margin: auto;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.censo form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.censo #familiares {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#familiares .familiar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.censo .seccion, .censo .subtitulo {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.censo .titulofamiliares {
+    padding: 5px 0 5px 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.acciones {
+	display: flex;
+}
+
+.acciones .accion {
+	margin: 0 10px;
+}
+
+.censo .subtitulo, .censo .titulofamiliares, #botones {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.censo .subtitulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.subtitulo img {
+    cursor: pointer;
+}
+
+.seccion select, .seccion input {
+    border-style: hidden;
+    outline: none;
+}
+
+.seccion input[type='text'] {
+    width: 90%;
+    padding: 2px;
+}
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opciones div {
+    margin: auto;
+}
+
+.censo #botones {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#botones input {
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (min-width:480px) {
+    
+    .censo .seccion {
+        width: 50%;
+    }
+    
+    .censo .largo100 {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width:768px) {
+    
+    .censo .seccion  {
+        width: 25%;
+    }
+    
+    .censo .largo50 {
+        width: 50%;
+    }
+    
+    .censo .largo100 {
+        width: 100%;
+    }
+    
+}

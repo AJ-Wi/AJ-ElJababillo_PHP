@@ -1,0 +1,53 @@
+.solicitud {
+    width: 100%;
+    padding: 10px;  
+    max-width: 400px;
+}
+
+.solicitud .formulario {
+	display: none;	
+}
+
+.solicitud #seleccionar {
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.solicitud form {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	border-left: 1px solid rgba(0, 0, 0, 0.3);
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.solicitud .seleccion {
+	padding: 10px;
+}
+
+.solicitud .motivo {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.motivo input, .seleccion select {
+    border-style: hidden;
+    outline: none;
+}
+
+.solicitud .datos {
+    position: relative;
+    padding: 10px;
+}
+
+.datos .dato {
+    width: 65%;
+    border-style: hidden;
+    outline: none;
+}
+
+.datos .solicitar {
+    cursor: pointer;
+    padding: 3px;
+    position: absolute;
+    right: 10px;
+    top: 7px;    
+}

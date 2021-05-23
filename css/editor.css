@@ -1,0 +1,37 @@
+body {
+  margin-bottom: 25px;
+  font-family: Helvetica, Arial, Verdana !important;
+}
+
+p, li {
+  line-height: 1.5;
+}
+
+p, ul, ol {
+  padding-bottom: 25px;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+}
+
+li {
+  margin-left: 30px;
+}
+
+ul li {
+  list-style: disc outside;
+}
+
+ol li {
+  list-style: decimal outside;
+}
+
+li {
+  vertical-align: middle;
+  margin: 2px 5px 5px 0;
+}

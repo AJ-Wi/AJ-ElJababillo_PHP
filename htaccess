@@ -1,0 +1,10 @@
+RewriteOptions inherit
+
+RewriteEngine On 
+RewriteBase /
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://consejoeljabillo.com.ve/$1 [R=301,L]
+
+#php_value display_errors 1
+

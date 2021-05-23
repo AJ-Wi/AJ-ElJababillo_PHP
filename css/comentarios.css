@@ -1,0 +1,83 @@
+.principal {
+    margin-top: 20px;
+}
+
+.what {
+	width: 100%;
+	text-align: center;
+}
+
+.whatsapp {
+	width: 10%;
+	height: auto;
+}
+
+.comentarios {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comentarios section {
+    padding: 10px;
+    margin-bottom: -1px;
+    width: 100%;
+}
+
+.comentarios h4, .comentarios h6 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.comentarios h6 {
+    margin-bottom: 10px;
+}
+
+.comentarios p {
+    width: 90%;
+    margin: auto;
+}
+
+.comentarios form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.comentarios .area {
+    width: 90%;  
+    margin: 10px;
+    border-style: hidden;
+    outline: none;
+    resize: none;
+}
+
+.comentarios .enviar {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.enviar .texto {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: hidden;
+    outline: none;
+    width: 65%;
+}
+
+.enviar .boton {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 3px;
+}
+
+.comentario h4 {
+    color: red;
+}

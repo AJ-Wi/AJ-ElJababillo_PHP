@@ -1,0 +1,81 @@
+.cabecera {
+    margin-top: 70px;
+}
+
+.principal {
+    margin-top: 10px;
+}
+
+main {
+    width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.unidad {
+	width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+	margin-bottom: 10px;	
+    padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.unidad h3 {
+	display: block;
+	width: 100%;
+	color: red;
+}
+
+.voc {
+	width: 99%;
+    padding: 20px;
+	margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.voc h4, .voc p {
+	color: red;	
+	text-align: center;
+}
+
+.voc h4 {
+	margin-bottom: 10px;
+}
+
+.voc .imagen {
+    width: 70%;
+    max-width: 100px;
+    margin: auto;
+}
+
+.imagen img {
+    width: 100%;
+	border-radius: 10%;
+}
+
+@media (min-width:480px) {
+    
+	main {
+		justify-content: space-between;
+    }
+	
+	.unidad {
+		justify-content: space-between;
+	}
+	
+	.voc {
+		width: 32%;
+	}
+	
+}
+
+@media (min-width:1024px) {
+
+	.voc {
+		width: 19%;
+	}
+	
+}

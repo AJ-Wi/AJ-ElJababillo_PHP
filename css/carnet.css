@@ -1,0 +1,98 @@
+.carnets {
+	margin-bottom: 20px;
+}
+
+.pagina {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.carnet {
+	margin: 0 1px 1px 0;
+	width: 230px;
+	height: 300px;
+	border: 1px solid rgba(0,0,0,0.5);
+	color: rgba(0,32,96,1);
+	position: relative;
+}
+
+.carnet .general {
+	position: relative;
+}
+
+.general .izquierdo {
+	position: absolute;
+	left: -117px;
+	top: 117px;
+	width: 259px;
+	height: 25px;
+	background: red;
+	color: white;
+	border: 1px solid rgba(0,0,0,0.5);
+	display: flex;
+	transform: rotate(-90deg);
+}
+
+.izquierdo h3 {
+	margin: auto;
+	padding: 0;
+}
+
+.general .contenido {
+	position: absolute;
+	top: 0;
+	left: 25px;
+	width: 203px;
+	height: 258px;
+	border: 1px solid rgba(0,0,0,0.5);
+}
+
+.contenido .logo {
+	margin-top: 10px;
+	height: 50px;
+	text-align: center;
+}
+
+.contenido h3, .contenido p, .codigo h2 {
+	text-align: center;
+}
+
+.contenido h3 {
+	margin-bottom: 5px;
+	color: black;
+}
+
+.carnet .codigo {
+	width: 100%;
+	height: 40px;
+	background: rgba(0,32,96,1);
+	border: 1px solid rgba(0,0,0,0.5);
+	color: white;
+	position: absolute;
+	bottom: 0;
+}
+
+.saltopagina{ 
+    display:none; 
+}
+
+@media print{
+	
+	.principal {
+		margin: 0;
+	}
+	
+	.pagina {
+		margin: 67px 0 0 0;
+	}
+	
+   .saltopagina{ 
+      display:block; 
+	  height: 75px;
+   }
+   
+   header, footer {
+	   display: none;
+   }
+   
+}

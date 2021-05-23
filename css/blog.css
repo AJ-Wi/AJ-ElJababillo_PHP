@@ -1,0 +1,106 @@
+.principal {
+    margin-top: 20px;
+}
+
+.cabecera {
+    margin-top: 70px;
+}
+
+.blog {
+    width: 99%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.blog:hover {
+    box-shadow: 0 0 0 0, 0 1px 10px;
+}
+
+.blog h3, .blog h5 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.blog a {
+    color: red;
+    text-decoration: none;    
+}
+
+.blog a:hover {
+    text-decoration: underline;
+}
+
+.blog .contenido {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blog .imagen {
+    width: 70%;
+    max-width: 170px;
+    margin: auto;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.blog .imagenU {
+    width: 50%;
+    max-width: 170px;
+    margin: auto;
+}
+
+.imagenU img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.blog p {
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+}
+
+.blog .formulario {
+    margin-top: 10px;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.formulario .texto {
+    border-style: hidden;
+    outline: none;
+}
+
+.formulario .boton {
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (min-width:480px) {
+    
+    .blog .contenido {
+        width: 95%;
+    }
+    
+    .blog .imagen {
+        width: 30%;
+        justify-content: space-between;
+    }
+    
+    .blog p {
+        width: 70%;
+        
+    }
+}

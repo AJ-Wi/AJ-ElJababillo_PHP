@@ -1,0 +1,142 @@
+.cabecera {
+    margin-top: 70px;
+}
+
+.principal {
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog {
+    width: 99%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.blog:hover {
+    box-shadow: 0 0 0 0, 0 1px 10px;
+}
+
+.blog h3 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    color: red;
+    text-align: center;
+}
+
+.blog a {
+    color: red;
+    text-decoration: none;    
+}
+
+.blog a:hover {
+    text-decoration: underline;
+}
+
+.blog .contenido {
+    width: 100%;
+    margin: auto;
+}
+
+.blog .imagen {
+    width: 70%;
+    max-width: 170px;
+    margin: auto;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.blog .imagenU {
+    width: 50%;
+    max-width: 170px;
+    margin: auto;
+}
+
+.imagenU img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.blog .formulario {
+    margin-top: 10px;
+    margin: auto;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.formulario .texto {
+    border-style: hidden;
+    outline: none;
+}
+
+.formulario .boton {
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (min-width:450px) {
+    
+    .blog {
+        width: 49%;
+    }
+
+    .blog .formulario {
+        width: 90%;
+        padding: 5px;
+        max-width: 250px;
+    }
+    
+    .formulario .texto, .formulario .boton {
+        font-size: 10px;
+    }
+    
+}
+
+@media (min-width:500px) {
+    
+    .formulario .texto, .formulario .boton {
+        font-size: 11px;
+    }
+    
+}
+
+@media (min-width:600px) {
+    
+    .formulario .texto, .formulario .boton {
+        font-size: 13px;
+    }
+    
+}
+
+@media (min-width:1024px) {
+    
+    main {
+        padding-right: 10px;
+    }
+    
+    .blog {
+        width: 32%;
+    }
+    
+    .formulario .texto, .formulario .boton {
+        font-size: 11px;
+    }
+    
+    .formulario .texto {
+        width: 120px;
+    }
+
+}
